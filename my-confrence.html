@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Confrence Registration Form </title>
+<!-- Bootstrap link-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="styleSheet" href= "styles-con.css">
+</head>
+
+<body class="m-3">
+    <!-- Header-->
+    <div class = "jumbotron">
+        <h1> Conference Registration Form</h1>
+    </div>
+    <div class ="row">
+    <div class = "col-md-5">
+        <div>
+            <p> Please Take your time and make sure to complete the conference registration form</p>
+            <p>There is a comment box at the end of the form, feel free to tell us any special requests or comments.</p>
+            <p>To recieve emails, make sure to select the "Yes" option</p>
+        </div>
+     </div> 
+
+<!-- 2nd column-->
+     <div class = "col-md-7">
+
+        <form class ="ml-5" action="">
+            <div>
+                <label for="name" class="FormCheck">Name</label><input type="text" name="registrationName" id="name" required maxlength="70" class = "form-control"><br>
+                <label for="birthDay" class="FormCheck">Date of Birth</label><input type="date" name="birth-date" id="birthDay" required class="form-control"><br>
+                <label for = "email" class="FormCheck"> Email</label><input type="email" name="register-email" id="email" required class="form-control"><br>
+                <label for= "password" class = "FormCheck"> Password</label><input type="password" name="register-password" id="password" required class="form-control">
+            </div>
+                <br>
+            <div>
+                <p class="permition">Whould you like to receive email?</p>
+                <div class="FormCheck">
+                    <input type="radio" id="yes" name="yes-email" checked class ="form-check-input">
+                    <label for="yes" class="form-check-label">Yes</label>
+                </div>
+            <div class="FormCheck">
+                <input type="radio" id="no" name="yes-email" class="form-check-input">
+                        <label for="no" class="form-check-lebel">No</label>
+                    </div>
+            
+                    <p class="permition">Whould you prefer phone calls?</p>
+                    <div class="FormCheck">
+                        <input type="radio" id="yes" name="time" checked class="form-check-input">
+                        <label for="yes" class="form-check-lebel">Yes</label>
+                    </div>
+
+                    <div class="FormCheck">
+                        <input type="radio" id="no" name="time" class="form-check-input">
+                        <label for="no" class="form-check-lebel">No</label>
+                    </div>
+
+
+                    <div>
+                        <p class="permition">Comments</p>
+                        <textarea name="request" id="msg" cols="70" rows="7"></textarea>
+                    </div>
+                        
+                    <div>
+                        <input type="submit" class="btn btn-primary mt-2" >
+                    </div>
+            </div>    
+        </from>
+     </div>
+
+    </div>
+    
+</body>
+
+
+
+
+</html>

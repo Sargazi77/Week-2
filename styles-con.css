@@ -1,0 +1,12 @@
+.jumbotron{
+    background-color: rgb(238, 141, 162);
+    font-family: 'Trade Winds', cursive ;
+}
+.m-3{
+    background-color: rgb(216, 240, 161);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: xx-large;
+}
+.form-check-lebel, .prghs{
+    color: rgb(0, 0, 0);    
+}

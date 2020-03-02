@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Favorite program page</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="favoriteProgram.css">
+</head>
+
+<body class="m-3">
+    <div class="jumbotron">
+        <h1>Credit card validator</h1>
+    </div>
+    <!-- short description about the program -->
+    <div>
+        <p class="parag">
+            I had python class in my previous semester and I wrote afew different programs during the semester,
+            between all the programs, this program was kinda interesting for me and became my Favorite program. 
+            That's because it can be helpful for creating website with peyment option in it. <br>
+            In this program, Users enter their credit card number and the program checks if they 
+            entered a valid credit card info and if the entered info is not corect it will show an error
+            and it wont go to the next step.
+        </p>
+    </div>
+    <!-- Python program -->
+    <div>
+        <pre>
+            <code class="code">
+import re
+
+def main():
+   user_input = inputs()
+   cc_search = processing(user_input)
+   outputs(user_input,cc_search)
+
+def inputs():
+
+    user_input = input('Please enter your credit card number with instructions on it')
+    while len(user_input) < 14 :
+        user_input = input('Try again, Your input should contain at least 14 charectors:')
+
+    return user_input
+
+
+def processing(user_input):
+
+
+
+    pattern = re.compile(r'(?:\d{4}-){3}\d{4}|\d{16}|(?:\d{4}[ ]){3}\d{4}')
+    cc_search = pattern.search(user_input)
+    print(cc_search)
+    if cc_search == None:
+        print('Try again, use format xxxx-xxxx-xxxx, xxxxxxxxxx')
+        main()
+
+    else:
+        cc_search = cc_search
+
+    return user_input,cc_search
+
+
+def outputs(user_input ,cc_search):
+    print('Success!')
+    print(f'Here\'s what you entered:  {user_input} ')
+    print(f'Your credit card number is: {cc_search.group()}')
+
+main()
+
+            </code>
+        </pre>
+    </div>
+
+    
+</body>
+</html>

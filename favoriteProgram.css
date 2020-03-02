@@ -1,0 +1,27 @@
+.jumbotron{
+    background-color: rgb(241, 33, 6) ;
+    text-align: center;
+}
+/* defining page css rules */
+.m-3{
+    background-color: rgb(3, 0, 0);
+    font-family: 'Cinzel',sans-serif ;
+}
+
+/* defining prghs css rules */
+.parag{
+    background-color: rgb(252, 158, 81);
+    font-size: x-large;
+}
+/* githublink css rules */
+.url{
+    font-size: large;
+    
+}
+/* code css rules */
+.code{
+    background-color: yellow;
+    color: rgb(12, 4, 3);
+    font-family: 'Squada One',cursive ;
+    
+}

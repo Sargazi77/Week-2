@@ -1,0 +1,17 @@
+.jumbotron {
+    color: aquamarine;
+    background-color: rgb(33, 139, 33);
+}
+
+body{
+    background-color: rgb(146, 192, 142);
+}
+
+h1 { 
+    font-family: 'Pacifico', cursive;
+    font-size: 64px;
+    }
+
+#email {
+    
+}    
